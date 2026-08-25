@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO / METADATA ===== -->
+  <title>BEEP — Your Craving Alert! | Pizza, Burgers &amp; More in Multan</title>
+  <meta name="description" content="BEEP — Your Craving Alert! Pizza, burgers, wraps, sandos, fries and deals in Buch Villas, Multan. Order on WhatsApp or call now." />
+  <meta property="og:title" content="BEEP — Your Craving Alert!" />
+  <meta property="og:description" content="Pizza, burgers, wraps, sandos, fries and deals in Buch Villas, Multan. Order on WhatsApp or call now." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/logo.jpg" />
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
+
+  <!-- ===== FONTS ===== -->
+  <!-- Baloo 2: rounded bold font for logo/headings (matches the "beep" logotype) -->
+  <!-- Rye: distressed stamp-style font for menu category "tape" labels -->
+  <!-- Nunito Sans: clean readable body font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Rye&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="top">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">
+        <img src="images/logo.jpg" alt="BEEP logo" />
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#deals" class="nav-link">Deals</a>
+        <a href="#location" class="nav-link">Location</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-drip" aria-hidden="true">
+      <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,0 L200,0 L200,20 C190,20 185,45 175,45 C165,45 165,25 155,25 C145,25 145,50 135,50 C125,50 125,15 115,15 C105,15 105,40 95,40 C85,40 85,20 75,20 C65,20 65,55 55,55 C45,55 45,18 35,18 C25,18 25,35 15,35 C7,35 5,20 0,20 Z" fill="var(--color-bg)"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <img src="images/logo.jpg" alt="BEEP — Your Craving Alert" class="hero-logo" />
+      <p class="hero-tagline">Pizza. Burgers. Wraps. Cravings, handled.</p>
+
+      <div class="hero-ctas">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="https://wa.me/923114838338?text=Hi%20BEEP!%20I'd%20like%20to%20place%20an%20order." class="btn btn-whatsapp" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 6.32A8.86 8.86 0 0 0 12 4.2a8.94 8.94 0 0 0-7.75 13.4L3 21.8l4.32-1.13a8.9 8.9 0 0 0 4.68 1.33 8.94 8.94 0 0 0 6.32-15.68ZM12 20.4a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.56.67.68-2.49-.18-.26A7.42 7.42 0 1 1 19.4 12a7.4 7.4 0 0 1-7.4 8.4Zm4.06-5.56c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.06-.22-.11-.94-.35-1.8-1.11-.66-.59-1.11-1.32-1.24-1.54-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.21-.69-1.65-.18-.43-.36-.37-.5-.38-.13-.01-.28-.01-.43-.01a.83.83 0 0 0-.6.28c-.2.22-.79.77-.79 1.87 0 1.1.81 2.17.92 2.32.11.15 1.6 2.44 3.87 3.42.54.23.96.37 1.29.48.54.17 1.03.15 1.42.09.43-.06 1.31-.54 1.5-1.06.18-.52.18-.96.13-1.06-.06-.1-.2-.15-.42-.26Z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU ===================== -->
+  <section class="menu" id="menu">
+    <h2 class="section-title">The Menu</h2>
+
+    <!-- Category filter buttons -->
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pizza">Pizza</button>
+      <button class="filter-btn" data-filter="wraps">Wraps</button>
+      <button class="filter-btn" data-filter="sandos">Sandos</button>
+      <button class="filter-btn" data-filter="burgers">Burgers</button>
+      <button class="filter-btn" data-filter="pasta">Pasta</button>
+      <button class="filter-btn" data-filter="frise">Frise</button>
+      <button class="filter-btn" data-filter="others">Others</button>
+      <button class="filter-btn" data-filter="drinks">Drinks</button>
+      <button class="filter-btn" data-filter="beepbox">Beep Box</button>
+    </div>
+
+    <!-- ===== PIZZA ===== -->
+    <div class="menu-category" data-category="pizza">
+      <div class="tape-label"><h3>Pizza</h3></div>
+
+      <div class="size-header">
+        <span></span>
+        <span>Small <em>6"</em></span>
+        <span>Medium <em>9"</em></span>
+        <span>Large <em>12"</em></span>
+      </div>
+
+      <div class="menu-list">
+        <div class="menu-row"><span class="item-name">Creamy Tikka</span><span class="price">550</span><span class="price">990</span><span class="price">1290</span></div>
+        <div class="menu-row"><span class="item-name">Fajita Sicilian</span><span class="price">550</span><span class="price">990</span><span class="price">1290</span></div>
+        <div class="menu-row"><span class="item-name">Tangy BBQ</span><span class="price">550</span><span class="price">990</span><span class="price">1290</span></div>
+        <div class="menu-row"><span class="item-name">Super Supreme</span><span class="price">550</span><span class="price">990</span><span class="price">1290</span></div>
+        <div class="menu-row"><span class="item-name">Royal Ranch</span><span class="price">550</span><span class="price">990</span><span class="price">1290</span></div>
+        <div class="menu-row"><span class="item-name">Dynamite</span><span class="price">550</span><span class="price">990</span><span class="price">1290</span></div>
+        <div class="menu-row"><span class="item-name">Malai Boti</span><span class="price">550</span><span class="price">990</span><span class="price">1290</span></div>
+        <div class="menu-row"><span class="item-name">Lemon Achari</span><span class="price">550</span><span class="price">990</span><span class="price">1290</span></div>
+      </div>
+
+      <div class="premium-callout">
+        <span>Premium <em>(Large only)</em></span>
+        <span class="price price-lg">1650</span>
+      </div>
+      <div class="menu-list">
+        <div class="menu-row single"><span class="item-name">Kabab Crust</span></div>
+        <div class="menu-row single"><span class="item-name">Kababish</span></div>
+        <div class="menu-row single"><span class="item-name">Cheese Crust</span></div>
+        <div class="menu-row single"><span class="item-name">Crown Crust</span></div>
+        <div class="menu-row single"><span class="item-name">Crispy Chicken</span></div>
+        <div class="menu-row single"><span class="item-name">Sausages</span></div>
+        <div class="menu-row single"><span class="item-name">Pepperoni</span></div>
+        <div class="menu-row single"><span class="item-name">Beep Special</span></div>
+      </div>
+
+      <div class="addon-note">
+        <span>Extra Toppings</span>
+        <span>Medium <strong>100</strong> &nbsp;|&nbsp; Large <strong>150</strong></span>
+      </div>
+    </div>
+
+    <!-- ===== WRAPS ===== -->
+    <div class="menu-category" data-category="wraps">
+      <div class="tape-label"><h3>Wraps</h3></div>
+      <div class="menu-list">
+        <div class="menu-row">
+          <span class="item-name">Hunter <small>— injected nuggets, wrapped with bold flavor</small></span>
+          <span class="price">740</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SANDOS ===== -->
+    <div class="menu-category" data-category="sandos">
+      <div class="tape-label"><h3>Sandos</h3></div>
+      <div class="menu-list">
+        <div class="menu-row"><span class="item-name">Rooster <small>(grilled)</small></span><span class="price">690</span></div>
+        <div class="menu-row"><span class="item-name">Sweet Heat <small>(crispy)</small></span><span class="price">740</span></div>
+      </div>
+    </div>
+
+    <!-- ===== BURGERS ===== -->
+    <div class="menu-category" data-category="burgers">
+      <div class="tape-label"><h3>Burgers</h3></div>
+      <div class="menu-list">
+        <div class="menu-row"><span class="item-name">Classic Zinger</span><span class="price">390</span></div>
+        <div class="menu-row"><span class="item-name">Mighty Zinger</span><span class="price">550</span></div>
+        <div class="menu-row"><span class="item-name">Spicy Fillet 🍔</span><span class="price">390</span></div>
+      </div>
+    </div>
+
+    <!-- ===== PASTA ===== -->
+    <div class="menu-category" data-category="pasta">
+      <div class="tape-label"><h3>Pasta</h3></div>
+      <div class="menu-list">
+        <div class="menu-row"><span class="item-name">Creamy</span><span class="price">650</span></div>
+        <div class="menu-row"><span class="item-name">Crunchy</span><span class="price">690</span></div>
+      </div>
+    </div>
+
+    <!-- ===== FRISE (FRIES) ===== -->
+    <div class="menu-category" data-category="frise">
+      <div class="tape-label"><h3>Frise</h3></div>
+      <div class="size-header two-col">
+        <span></span>
+        <span>Medium</span>
+        <span>Large</span>
+      </div>
+      <div class="menu-list">
+        <div class="menu-row two-col"><span class="item-name">Loaded Frise</span><span class="price">450</span><span class="price">600</span></div>
+        <div class="menu-row two-col"><span class="item-name">Simple Frise</span><span class="price">250</span><span class="price">400</span></div>
+        <div class="menu-row two-col"><span class="item-name">Garlic Mayo</span><span class="price">350</span><span class="price">490</span></div>
+      </div>
+    </div>
+
+    <!-- ===== OTHERS ===== -->
+    <div class="menu-category" data-category="others">
+      <div class="tape-label"><h3>Others</h3></div>
+      <div class="menu-list">
+        <div class="menu-row"><span class="item-name">Hotshots <small>(8 pieces)</small></span><span class="price">400</span></div>
+        <div class="menu-row"><span class="item-name">Nuggets <small>(8 pieces)</small></span><span class="price">500</span></div>
+        <div class="menu-row"><span class="item-name">Cheese Slice</span><span class="price">80</span></div>
+        <div class="menu-row"><span class="item-name">Dip Sauce <small>(Garlic Mayo / Thousand Island / Dynamite)</small></span><span class="price">80</span></div>
+      </div>
+    </div>
+
+    <!-- ===== DRINKS ===== -->
+    <div class="menu-category" data-category="drinks">
+      <div class="tape-label"><h3>Drinks</h3></div>
+      <div class="menu-list">
+        <div class="menu-row"><span class="item-name">Buddy</span><span class="price">100</span></div>
+        <div class="menu-row"><span class="item-name">1 Ltr</span><span class="price">170</span></div>
+        <div class="menu-row"><span class="item-name">1.5 Ltr</span><span class="price">220</span></div>
+        <div class="menu-row"><span class="item-name">Water (Small)</span><span class="price">700</span></div>
+        <div class="menu-row"><span class="item-name">Water (Large)</span><span class="price">650</span></div>
+      </div>
+      <div class="addon-note">
+        <span>Add On</span>
+        <span>Add a Buddy + Fries to any single item for a complete meal — just <strong>Rs. 120</strong></span>
+      </div>
+    </div>
+
+    <!-- ===== BEEP BOX ===== -->
+    <div class="menu-category" data-category="beepbox">
+      <div class="tape-label"><h3>Beep Box</h3></div>
+      <p class="beepbox-desc">Our signature Korean-inspired pizza creation. A long, loaded pie baked in our iconic box — golden crust, rich sauce, molten cheese and generous toppings from end to end. Designed to be different, delicious, and seriously shareable.</p>
+      <div class="menu-list">
+        <div class="menu-row"><span class="item-name">Simple</span><span class="price">699</span></div>
+        <div class="menu-row"><span class="item-name">Premium</span><span class="price">799</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEALS ===================== -->
+  <section class="deals" id="deals">
+    <h2 class="section-title">Deals</h2>
+    <div class="deals-grid">
+      <div class="deal-card"><span class="deal-num">Deal 1</span><p>2 Small Pizza + 2 Buddy</p><span class="deal-price">1150</span></div>
+      <div class="deal-card"><span class="deal-num">Deal 2</span><p>4 Classic Zinger + 1 Ltr</p><span class="deal-price">1690</span></div>
+      <div class="deal-card"><span class="deal-num">Deal 3</span><p>2 Medium Pizza + 1 Ltr</p><span class="deal-price">1900</span></div>
+      <div class="deal-card"><span class="deal-num">Deal 4</span><p>2 Large Pizza + 1.5 Ltr</p><span class="deal-price">2550</span></div>
+      <div class="deal-card"><span class="deal-num">Deal 5</span><p>1 Large Pizza + 1 Classic Zinger + 1 Ltr</p><span class="deal-price">1750</span></div>
+      <div class="deal-card"><span class="deal-num">Deal 6</span><p>2 Classic Zinger + 2 Buddy</p><span class="deal-price">930</span></div>
+      <div class="deal-card"><span class="deal-num">Deal 7</span><p>1 Medium Pizza + 2 Classic Zinger + 1 Small Fries + 1 Ltr</p><span class="deal-price">2050</span></div>
+      <div class="deal-card"><span class="deal-num">Deal 8</span><p>1 Large + 2 Classic Zinger + 1 Loaded Fries (Small) + 1.5 Ltr</p><span class="deal-price">2600</span></div>
+      <div class="deal-card"><span class="deal-num">Deal 9</span><p>2 Large Pizzas + 2 Classic Zingers + Large Fries + 1.5 Ltr</p><span class="deal-price">3750</span></div>
+      <div class="deal-card"><span class="deal-num">Deal 10</span><p>1 Small Pizza + 1 Classic Zinger + 2 Buddy</p><span class="deal-price">1100</span></div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT / ACTIONS ===================== -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Get Your Craving Fixed</h2>
+    <div class="action-grid">
+      <a href="tel:+923114838338" class="action-btn">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02Z"/></svg>
+        <span>Call Us</span>
+      </a>
+      <a href="https://wa.me/923114838338?text=Hi%20BEEP!%20I'd%20like%20to%20place%20an%20order." class="action-btn" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 6.32A8.86 8.86 0 0 0 12 4.2a8.94 8.94 0 0 0-7.75 13.4L3 21.8l4.32-1.13a8.9 8.9 0 0 0 4.68 1.33 8.94 8.94 0 0 0 6.32-15.68ZM12 20.4a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.56.67.68-2.49-.18-.26A7.42 7.42 0 1 1 19.4 12a7.4 7.4 0 0 1-7.4 8.4Zm4.06-5.56c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.06-.22-.11-.94-.35-1.8-1.11-.66-.59-1.11-1.32-1.24-1.54-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.21-.69-1.65-.18-.43-.36-.37-.5-.38-.13-.01-.28-.01-.43-.01a.83.83 0 0 0-.6.28c-.2.22-.79.77-.79 1.87 0 1.1.81 2.17.92 2.32.11.15 1.6 2.44 3.87 3.42.54.23.96.37 1.29.48.54.17 1.03.15 1.42.09.43-.06 1.31-.54 1.5-1.06.18-.52.18-.96.13-1.06-.06-.1-.2-.15-.42-.26Z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+      <a href="https://maps.app.goo.gl/X5Mtc6YANVnN87WK6?g_st=aw" class="action-btn" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+        <span>Get Directions</span>
+      </a>
+      <a href="https://www.instagram.com/beep_mux" class="action-btn" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.59 1.8c.46-.16 1.26-.35 2.43-.4C9.29 1.34 9.67 1.33 12 1.33Zm0 1.8c-3.15 0-3.5.01-4.73.07-.96.04-1.48.2-1.82.34-.46.18-.79.39-1.13.73-.34.34-.55.67-.73 1.13-.14.34-.3.86-.34 1.82-.06 1.23-.07 1.58-.07 4.73s.01 3.5.07 4.73c.04.96.2 1.48.34 1.82.18.46.39.79.73 1.13.34.34.67.55 1.13.73.34.14.86.3 1.82.34 1.23.06 1.58.07 4.73.07s3.5-.01 4.73-.07c.96-.04 1.48-.2 1.82-.34.46-.18.79-.39 1.13-.73.34-.34.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-1.23.07-1.58.07-4.73s-.01-3.5-.07-4.73c-.04-.96-.2-1.48-.34-1.82a3.1 3.1 0 0 0-.73-1.13 3.1 3.1 0 0 0-1.13-.73c-.34-.14-.86-.3-1.82-.34C15.5 4.01 15.15 4 12 4Zm0 3.65a4.35 4.35 0 1 1 0 8.7 4.35 4.35 0 0 1 0-8.7Zm0 7.17a2.82 2.82 0 1 0 0-5.64 2.82 2.82 0 0 0 0 5.64Zm5.54-7.34a1.02 1.02 0 1 1-2.04 0 1.02 1.02 0 0 1 2.04 0Z"/></svg>
+        <span>Instagram</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== LOCATION ===================== -->
+  <section class="location" id="location">
+    <h2 class="section-title">Find Us</h2>
+    <div class="location-wrap">
+      <div class="location-info">
+        <p class="location-name">BEEP</p>
+        <p class="location-address">Shop #53, Manik Block Commercial Area,<br />Buch Villas, Multan</p>
+        <a href="https://maps.app.goo.gl/X5Mtc6YANVnN87WK6?g_st=aw" class="btn btn-primary" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps?q=Shop%2053%2C%20Manik%20Block%20Commercial%20Area%2C%20Buch%20Villas%2C%20Multan&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="BEEP location map">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <img src="images/logo.jpg" alt="BEEP logo" class="footer-logo" />
+    <p class="footer-tagline">Your Craving Alert!</p>
+
+    <div class="footer-links">
+      <a href="tel:+923114838338">Call</a>
+      <a href="https://wa.me/923114838338" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.instagram.com/beep_mux" target="_blank" rel="noopener">Instagram</a>
+      <a href="#location">Location</a>
+    </div>
+
+    <p class="footer-copy">&copy; <span id="year"></span> BEEP. All rights reserved.</p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
